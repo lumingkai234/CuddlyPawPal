@@ -269,10 +269,7 @@ CuddlyPawPal/
    ```
 2. 启动开发服务器：
    ```bash
-   daphne -b 0.0.0.0 -p 8080 \
-    --ssl-certfile certs/cert.pem \
-    --ssl-keyfile certs/key.pem \
-    CuddlyPawPal.asgi:application
+   daphne -b 0.0.0.0 -p 8080 CuddlyPawPal.asgi:application
    ```
 
 ---
@@ -281,4 +278,4 @@ CuddlyPawPal/
 
 | 路由                | 方法 | 描述                     |
 |---------------------|------|--------------------------|
-| `/api/process-audio/` | POST | 上传音频并返回语音回答   |
+| `/ws/chip/`        | WebSocket | 建立连接 |

@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-++h)imetr97(7qse8q5j0#&pp@j%@fan=$bq(&0s!x6e7*cg1r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '175.27.227.48'
+]
 
 
 # Application definition
@@ -70,7 +74,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'CuddlyPawPal.wsgi.application'
-
+ASGI_APPLICATION = 'CuddlyPawPal.asgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
