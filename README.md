@@ -269,7 +269,10 @@ CuddlyPawPal/
    ```
 2. 启动开发服务器：
    ```bash
-   python manage.py runserver
+   daphne -b 0.0.0.0 -p 8080 \
+    --ssl-certfile certs/cert.pem \
+    --ssl-keyfile certs/key.pem \
+    CuddlyPawPal.asgi:application
    ```
 
 ---
