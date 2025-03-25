@@ -1,0 +1,15 @@
+server:
+    # 服务器监听地址和端口(Server listening address and port)
+    ip: 0.0.0.0
+    port: 8080
+
+
+welcome_message:
+    type: welcome
+    version: 1
+    transport: websocket
+    audio_params:
+        format: opus
+        sample_rate: 16000
+        channels: 1
+        frame_duration: 60
